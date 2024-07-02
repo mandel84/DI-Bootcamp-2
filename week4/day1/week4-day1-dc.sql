@@ -1,2 +1,0 @@
--- SELECT COUNT(*) FROM actors;
--- I will recieve an error
