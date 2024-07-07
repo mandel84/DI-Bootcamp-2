@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloring Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #controls {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+        #colorPalette {
+            display: grid;
+            grid-template-columns: repeat(2, 40px);
+            grid-gap: 5px;
+            margin-bottom: 20px;
+        }
+        .color {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border: 2px solid #000;
+        }
+        #drawingBoard {
+            display: grid;
+            grid-template-columns: repeat(20, 20px);
+            grid-gap: 2px;
+        }
+        .cell {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button id="clearBoard">Clear Board</button>
+        <div id="colorPalette">
+            <!-- Colors will be generated here by JavaScript -->
+        </div>
+    </div>
+    <div id="drawingBoard">
+        <!-- Cells will be generated here by JavaScript -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
