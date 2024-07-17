@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Characters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>STAR WARS</h1>
+        </div>
+        <div class="character-info">
+            <h2 id="character-name"></h2>
+            <p id="character-height"></p>
+            <p id="character-gender"></p>
+            <p id="character-birth-year"></p>
+            <p id="character-home-world"></p>
+        </div>
+        <div class="loading" id="loading">
+            <i class="fas fa-spinner fa-spin"></i> Loading...
+        </div>
+        <div class="error" id="error">
+            <p>Oh No! That person isn't available.</p>
+        </div>
+        <button id="fetch-button">Find Someone</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
