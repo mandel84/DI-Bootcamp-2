@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  background-color: beige;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: lightgreen;
+}
